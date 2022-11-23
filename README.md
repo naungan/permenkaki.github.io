@@ -1,5 +1,5 @@
-TUGAS 2 ON CRUD
-TUGAS 1 ON READFILE
+- TUGAS 2 ON CRUD
+- TUGAS 1 ON READFILE
 
 # permenkaki.github.io
 - py file contain a simple code to run a simple server to show hello world message
