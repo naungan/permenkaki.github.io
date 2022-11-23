@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>{% block title %}{% endblock %}</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-image: url('https://c4.wallpaperflare.com/wallpaper/644/305/118/pattern-black-gradient-texture-wallpaper-preview.jpg');
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+</style>
+</head>
+<body>
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Permenkaki
+    <div>
+      <tr>
+      <td><a href="/create"> CREATE </a></td>
+      <td><a href="/"> READ </a></td>
+      <td><a href="/update"> UPDATE </a></td>
+      <td><a href="/delete"> DELETE </a></td>
+      <tr>
+    </div>  
+  </div>
+        <div>
+        {% block content %}{% endblock %}
+        </div>
+  
+  <div class="w3-display-bottomleft w3-padding-large">
+    Written by <a href="https://github.com/naungan/permenkaki.github.io/blob/main/index.html" target="_blank">Permenkaki</a>
+  </div>
+</div>
+
+</body>
+</html>

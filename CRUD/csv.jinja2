@@ -1,0 +1,24 @@
+{% extends 'layout.jinja2' %}
+
+{% block title -%}
+CSV
+{%- endblock %}
+
+{% block content %}
+  <div class="w3-display-middle">
+    		<h1>Read Cars.csv</h1>
+
+    		<div id="headnya">
+    		<h3>{{headnya}}</h3>
+    		</div>
+
+    		<div id="data">
+    		<h3>{%- for line in data %}
+    		 {{ line }}
+    		 <br>
+    		{% endfor %}</h3>
+    		</div>
+  </div>
+{% endblock %}
+
+  
